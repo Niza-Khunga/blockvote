@@ -137,8 +137,8 @@ Before installing Blockvote, you need to have these installed on your computer:
    ```
 6. Find these lines:
    ```javascript
-   const VOTING_CONTRACT_ADDRESS = "old-address-here";
-   const RESULTS_CONTRACT_ADDRESS = "old-address-here";
+   const VOTING_CONTRACT_ADDRESS = 'old-address-here';
+   const RESULTS_CONTRACT_ADDRESS = 'old-address-here';
    ```
 7. Replace both addresses with your new deployed contract addresses.
 
@@ -171,21 +171,18 @@ Before installing Blockvote, you need to have these installed on your computer:
 ### Smart Contracts (Backend)
 
 **AccessControl.sol** - Role-based access control system
-
 - Defines three roles: Voter, Auditor, Admin
 - Hardcoded admin and auditor addresses for security
 - Manages role assignments and permissions
 - Provides role verification functions
 
 **Voting.sol** - Main voting contract
-
 - Manages election lifecycle (creation, voting, finalization)
 - Handles voter registration and vote casting
 - Implements Merkle tree for voter eligibility verification
 - Provides vote verification functionality
 
 **Results.sol** - Results management contract
-
 - Handles election result calculation and verification
 - Provides real-time and finalized result access
 - Manages winner determination and tie scenarios
@@ -194,7 +191,6 @@ Before installing Blockvote, you need to have these installed on your computer:
 ### Frontend Structure
 
 **Context Providers** (`src/context/`)
-
 - `VotingContext.js` - Manages wallet connection and contract interactions
 - `VoteContext.js` - Handles voting operations and registration
 - `ElectionContext.js` - Manages election creation and management
@@ -202,7 +198,6 @@ Before installing Blockvote, you need to have these installed on your computer:
 - `AdminContext.js` - Provides admin-specific functionality
 
 **Pages** (`src/app/`)
-
 - `/` - Home page with overview
 - `/how-it-works` - Process explanation (updated to match actual workflow)
 - `/elections` - Election listing and voting interface
@@ -212,7 +207,6 @@ Before installing Blockvote, you need to have these installed on your computer:
 - `/faq` - Frequently asked questions
 
 **Components** (`src/components/`)
-
 - Navigation, modals, forms, and display components
 - Organized by functionality (elections, results, verification, etc.)
 
@@ -266,19 +260,16 @@ For technical support, contact the development team with specific error messages
 ## Development Team Contributions
 
 **Niza Khunga (2021503321)** - Smart contract development and blockchain backend
-
 - Designed and implemented AccessControl, Voting, and Results contracts
 - Set up Hardhat development environment and deployment scripts
 - Implemented role-based access control and election lifecycle management
 
 **Faith Mayani (2021538354)** - Frontend development with Next.js
-
 - Built responsive UI components using React Bootstrap
 - Implemented page routing and user interface design
 - Created election management and voting interfaces
 
 **Enala Saishi (2021463711)** - Frontend-backend integration
-
 - Developed context providers for state management
 - Implemented wallet connection and contract interaction
 - Created vote verification and result display functionality
